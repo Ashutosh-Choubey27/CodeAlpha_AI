@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Language Translator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌐 Language Translator</h1>
+
+    <textarea id="inputText" placeholder="Enter text here..."></textarea>
+
+    <div class="dropdowns">
+      <select id="sourceLang">
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+        <!-- aur bhi add kar sakte ho -->
+      </select>
+
+      <select id="targetLang">
+        <option value="hi">Hindi</option>
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+      </select>
+    </div>
+
+    <button onclick="translateText()">Translate</button>
+
+    <div id="output"></div>
+
+    <div class="actions">
+      <button onclick="copyText()">📋 Copy</button>
+      <button onclick="speakText()">🔊 Speak</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
